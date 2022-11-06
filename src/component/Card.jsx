@@ -25,7 +25,7 @@ export default React.memo(function Card({movieData,isLiked = false}) {
        })
 const addToList = async ()=>{
     try{
-        await axios.post("http://localhost:5000/api/user/add",{email,data :movieData })
+        await axios.post("https://netflix.herokuapp.com/api/user/add",{email,data :movieData })
     }catch(error){
 
     }
